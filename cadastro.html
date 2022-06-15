@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Usuários</title>
+  <link rel="stylesheet" href="css/cadastro.css" />
+</head>
+
+<body>
+  <div class="area-formulario">
+    <img src="https://simmsolucoes.com.br/wp-content/themes/v01/assets/img/build/logo-simm.c69ae54f.svg"
+      alt="Logo da SIMM Solucoes">
+    <form action="#" method="post">
+      <fieldset class="fieldset-dados-pessoais">
+        <legend class="legend-dados-pessoais">
+          <h3>Dados Pessoais</h3>
+        </legend>
+        <label class="label-matricula" for="matricula">Matricula:
+          <input type="number" name="matricula" id="matricula">
+        </label>
+        <label for="nome" class="label-nome">Nome do colaborador:
+          <input type="text" name="nome" id="nome">
+        </label>
+        <label class="label-email">E-mail:
+          <input type="email" name="email" id="email">
+        </label>
+        <label for="funcao" class="label-funcao">Função:
+          <select name="funcao" id="funcao" class="select-funcao">
+            <option value="funcao00">Selecionar</option>
+            <option value="funcao01">Administrativo</option>
+            <option value="funcao02">Comprador</option>
+            <option value="funcao03">Diretor Administrativo</option>
+            <option value="funcao04">Diretor Comercial</option>
+            <option value="funcao05">Diretor de Inovação</option>
+            <option value="funcao06">Diretor de Operações</option>
+            <option value="funcao07">Diretor Financeiro</option>
+            <option value="funcao08">Diretor Presidente</option>
+            <option value="funcao09">Engenharia</option>
+            <option value="funcao10">Gerente de Área</option>
+            <option value="funcao11">Gerente de Projetos</option>
+            <option value="funcao12">Gerente de Suprimentos</option>
+            <option value="funcao13">Solicitante</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset class="fieldset-permissoes">
+        <legend class="legend-permissoes">
+          <h3>Permissões</h3>
+        </legend>
+        <label for="aprovar" class="label-aprovar">
+          <input class="checkbox" type="checkbox" name="aprovar" id="aprovar"> APROVAR
+        </label>
+        <label for="cancelar" class="label-cancelar">
+          <input class="checkbox" type="checkbox" name="cancelar" id="cancelar"> CANCELAR
+        </label>
+        <label for="cancelar-processo" class="label-cancelar-processo">
+          <input class="checkbox" type="checkbox" name="cancelar-processo" id="cancelar-processo"> CANCELAR PROCESSO
+        </label>
+        <label for="salvar" class="label-salvar">
+          <input class="checkbox" type="checkbox" name="salvar" id="salvar"> SALVAR
+        </label>
+      </fieldset>
+      <div class="botoes">
+        <button class="button-adicionar" type="submit">ADICIONAR</button>
+        <button class="button-remover" type="submit">REMOVER</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
